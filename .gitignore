@@ -1,3 +1,29 @@
-network-visualizer/backend/media/*
-network-visualizer/frontend/node_modules/*
-backend/venv/*
+# Ignoruj vygenerované médiá (obrázky, videá, atď.)
+backend/media/
+
+# Ignoruj frontendové závislosti
+frontend/node_modules/
+
+# Ignoruj virtuálne prostredie
+backend/venv/
+
+# Prípadne univerzálne ignoruj všetky venv-y:
+**/venv/
+
+# DB súbor pre SQLite
+*.sqlite3
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# VS Code / IDE
+.vscode/
+.idea/
+
+# Logy a temp súbory
+*.log
+*.tmp
+*.swp
+.DS_Store
